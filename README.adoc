@@ -15,11 +15,11 @@ Verilog HDL implementation of the GOST R34.12-2015 - a fresh Russian government 
 === Short Chipher Detail
 
 |===============================================
-|Date published | 2015
-|Structure      | Substitution-permutation network
-|Key sizes      | 256 bits
-|Block sizes    | 128 bits
-|Rounds         | 10
+| *Date published* | 2015
+| *Structure*      | Substitution-permutation network
+| *Key sizes*      | 256 bits
+| *Block sizes*    | 128 bits
+| *Rounds*         | 10
 |===============================================
 
 == References
@@ -28,3 +28,7 @@ Verilog HDL implementation of the GOST R34.12-2015 - a fresh Russian government 
 * https://en.wikipedia.org/wiki/Kuznyechik[GOST R 34.12-2015 under name Grasshopper(Kuznyechik) (EN)]
 * https://www.tc26.ru/standard/gost/GOST_R_3413-2015.pdf[GOST R 34.13-2015: Block cipher mode of operation (RU)]
 * https://tools.ietf.org/html/rfc7801[RFC7801]
+
+
+
+Feel free to send me comments, suggestions and bug reports
