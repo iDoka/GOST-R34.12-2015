@@ -1,0 +1,30 @@
+= GOST R34.12-2015 aka Kuznyechik
+Dmitry Murzinov <kakstattakim@gmail.com>
+v1.0, 20.06.2016
+:doctype: article
+:lang: en
+:stem:
+:grid: all
+:align: center
+:imagesdir: example???
+:homepage: http://idoka.ru
+
+== Intro
+Verilog HDL implementation of the GOST R34.12-2015 - a fresh Russian government standard symmetric key block cipher.
+
+=== Short Chipher Detail
+
+|===============================================
+|Date published | 2015
+|Structure      | Substitution-permutation network
+|Key sizes      | 256 bits
+|Block sizes    | 128 bits
+|Rounds         | 10
+|===============================================
+
+== References
+
+* https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%87%D0%B8%D0%BA_%28%D1%88%D0%B8%D1%84%D1%80%29[GOST R 34.12-2015 Kuznyechik (RU)]
+* https://en.wikipedia.org/wiki/Kuznyechik[GOST R 34.12-2015 under name Grasshopper(Kuznyechik) (EN)]
+* https://www.tc26.ru/standard/gost/GOST_R_3413-2015.pdf[GOST R 34.13-2015: Block cipher mode of operation (RU)]
+* https://tools.ietf.org/html/rfc7801[RFC7801]
