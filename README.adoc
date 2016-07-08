@@ -1,4 +1,4 @@
-= GOST R34.12-2015 aka Kuznyechik
+= GOST R34.12-2015 aka «Kuznyechik» Verilog HDL code
 Dmitry Murzinov <kakstattakim@gmail.com>
 v1.0, 20.06.2016
 :doctype: article
@@ -10,6 +10,7 @@ v1.0, 20.06.2016
 :homepage: http://idoka.ru
 
 == Intro
+
 Verilog HDL implementation of the GOST R34.12-2015 - a fresh Russian government standard symmetric key block cipher.
 
 === Short Chipher Detail
@@ -21,6 +22,53 @@ Verilog HDL implementation of the GOST R34.12-2015 - a fresh Russian government 
 | *Block sizes*    | 128 bits
 | *Rounds*         | 10
 |===============================================
+
+
+== Features
+
+////
+* SystemVerilog RTL and TB code is provided
+* Implements both encryption and decryption in the same block
+* GOST 28147-89 algorithm focusing on very low area applications
+* Implementation takes about 32 cycles to encrypt/decrypt a block
+* EBC-cipher mode support
+* The core complies to use of S-box according to RFC4357/GOST R34.11-94 or RFC5830 (by synthesis), or S-box switch "on the fly" (realtime).
+////
+
+== Status
+
+// * Core implementations have been tested on a Xilinx Spartan-3E FPGA succesfully
+
+== Employment
+
+
+
+=== Synthesis
+
+////
+Sample Synthesis Results for the ECB-mode
+
+```
+Technology         Size/Area  Speed/Performance
+==============================================================
+Xilinx Spartan-3E
+```
+////
+
+== Limitations
+
+// The design uses SystemVerilog as language for RTL-implementation therefore your Design Tools should support SystemVerilog for synthesis and simulation.
+
+
+== ToDo
+
+////
+* Implementation testing with support Botan crypto-lib. It can be used in a DPI-based testbench as golden model or test vector generator
+* Support for following cipher modes: CBC, CFB, OFB (and maybe CTR)
+* Adding SoC-buses compatibility for seamless integration
+////
+
+
 
 == References
 
