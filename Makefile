@@ -10,7 +10,7 @@
 PROJECT=gost_r3412_2015
 SOURCES=$(PROJECT).v
 
-DEFINE=GOST_SBOX_TESTPARAM
+DEFINE=GOST_R3412_2015
 
 
 SIM_DIR=./sim/bin
@@ -109,6 +109,33 @@ synplify:
 vivado: sbox-gen
 	@vivado -nojournal -nolog -mode batch -source $(SYN_DIR)/vivado.tcl
 	-@grep VIOLATED syn/log/post_route_timing_worst.rpt
+
+
+
+
+
+
+sim-s-stage:
+	@$(eval ITEM = S_stage)
+	@rm -rf $(ITEM).vvp
+	@iverilog  -g2005-sv -I./rtl -D$(DEFINE) -s tb -o $(ITEM).vvp sim/src/$(ITEM).v
+	@vvp -n $(ITEM).vvp -lxt2
+
+sim-r-stage:
+	@$(eval ITEM = R_stage)
+	@rm -rf $(ITEM).vvp
+	@iverilog  -g2005-sv -I./rtl -D$(DEFINE) -s tb -o $(ITEM).vvp sim/src/$(ITEM).v
+	@vvp -n $(ITEM).vvp -lxt2
+
+sim-l-stage:
+	@$(eval ITEM = L_stage)
+	@rm -rf $(ITEM).vvp
+	@iverilog  -g2005-sv -I./rtl -D$(DEFINE) -s tb -o $(ITEM).vvp sim/src/$(ITEM).v
+	@vvp -n $(ITEM).vvp -lxt2
+
+
+
+
 
 
 ##### PHONY target #####
