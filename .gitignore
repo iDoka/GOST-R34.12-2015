@@ -22,6 +22,8 @@ syn/log/*
 syn/out/*
 syn/run/*
 
+*.vvp
+*.vcd
 
 
 ## Editors:
