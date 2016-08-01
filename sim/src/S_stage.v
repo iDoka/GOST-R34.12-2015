@@ -84,7 +84,22 @@ initial begin
   $finish;
 end
 
-
+/*
+// ======= Sbox(x) =======
+function [127:0] Sbox( input [127:0] x );
+logic [7:0] K [0:15];
+integer j;
+localparam W = 8;
+begin
+//generate
+  for (j=0;j<16;j=j+1) begin
+    K[j] = PI(x[W*j+W-1:W*j]);
+    Sbox[W*(j+1)-1:W*j] = K[j];
+  end
+//endgenerate
+end
+endfunction
+*/
 // ======= Sbox(x) =======
 function [127:0] Sbox( input [127:0] x );
 logic [7:0] K [0:15];
@@ -110,6 +125,7 @@ begin
     Sbox = {K[15],K[14],K[13],K[12],K[11],K[10],K[9],K[8],K[7],K[6],K[5],K[4],K[3],K[2],K[1],K[0]};
 end
 endfunction
+
 
 /*
 /////////////// dumping
