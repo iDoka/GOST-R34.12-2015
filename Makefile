@@ -129,9 +129,10 @@ sim-r-stage:
 
 sim-l-stage:
 	@$(eval ITEM = L_stage)
-	@rm -rf $(ITEM).vvp
+	@rm -rf $(ITEM).vvp $(ITEM).vcd
 	@iverilog  -g2005-sv -I./rtl -D$(DEFINE) -s tb -o $(ITEM).vvp sim/src/$(ITEM).v
 	@vvp -n $(ITEM).vvp -lxt2
+	@gtkwave $(ITEM).vcd $(SIM_DIR)/$(ITEM).gtkw &
 
 
 
