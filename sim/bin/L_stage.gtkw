@@ -1,0 +1,109 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Mon Aug  1 14:51:50 2016
+[*]
+[dumpfile] "L_stage.vcd"
+[dumpfile_mtime] "Mon Aug  1 14:48:49 2016"
+[dumpfile_size] 1920
+[savefile] "sim/bin/L_stage.gtkw"
+[timestart] 0
+[size] 2560 1352
+[pos] -1 -1
+*-5.000000 132 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.L_stage_u0.
+[treeopen] tb.L_stage_u0.genblk1[0].
+[treeopen] tb.L_stage_u0.genblk1[15].
+[sst_width] 218
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 413
+@28
+[color] 2
+tb.clk[0]
+@25
+[color] 6
+tb.clk_counter[24:0]
+@28
+tb.enable[0]
+tb.load[0]
+@22
+tb.k[7:0]
+tb.pdata[127:0]
+tb.reference_data[127:0]
+tb.cdata[127:0]
+tb.L_stage_u0.counter[3:0]
+@28
+tb.ready[0]
+@22
+tb.L_stage_u0.L_vec.x[3:0]
+@200
+-
+-GF256
+@22
+tb.L_stage_u0.genblk1[0].gf256_u0.L_vec[7:0]
+@28
+[color] 2
+tb.L_stage_u0.genblk1[0].gf256_u0.clk[0]
+@22
+tb.L_stage_u0.genblk1[0].gf256_u0.data[7:0]
+@28
+tb.L_stage_u0.genblk1[0].gf256_u0.enable[0]
+@22
+tb.L_stage_u0.genblk1[0].gf256_u0.gf256[7:0]
+@28
+tb.L_stage_u0.genblk1[0].gf256_u0.load[0]
+@22
+tb.L_stage_u0.genblk1[0].gf256_u0.lsfr[7:0]
+@28
+tb.L_stage_u0.genblk1[0].gf256_u0.null_poly[0]
+@22
+tb.L_stage_u0.genblk1[0].gf256_u0.poly[7:0]
+@28
+tb.L_stage_u0.genblk1[0].gf256_u0.ready[0]
+@200
+-
+-L_stage_u0
+@28
+[color] 2
+tb.L_stage_u0.clk[0]
+tb.L_stage_u0.enable[0]
+tb.L_stage_u0.load[0]
+@22
+tb.L_stage_u0.DI[127:0]
+tb.L_stage_u0.DO[127:0]
+@28
+tb.L_stage_u0.gf256_enable[0]
+tb.L_stage_u0.gf256_load[0]
+@22
+tb.L_stage_u0.gf256_ready[15:0]
+@28
+tb.L_stage_u0.ready[0]
+tb.L_stage_u0.ready_int[0]
+@22
+tb.L_stage_u0.x[7:0]
+@200
+-GF256[15]
+@22
+tb.L_stage_u0.genblk1[15].gf256_u0.L_vec[7:0]
+@28
+[color] 2
+tb.L_stage_u0.genblk1[15].gf256_u0.clk[0]
+@22
+tb.L_stage_u0.genblk1[15].gf256_u0.data[7:0]
+@28
+tb.L_stage_u0.genblk1[15].gf256_u0.enable[0]
+@22
+tb.L_stage_u0.genblk1[15].gf256_u0.gf256[7:0]
+@28
+tb.L_stage_u0.genblk1[15].gf256_u0.load[0]
+@22
+tb.L_stage_u0.genblk1[15].gf256_u0.lsfr[7:0]
+@28
+tb.L_stage_u0.genblk1[15].gf256_u0.null_poly[0]
+@22
+tb.L_stage_u0.genblk1[15].gf256_u0.poly[7:0]
+@28
+tb.L_stage_u0.genblk1[15].gf256_u0.ready[0]
+[pattern_trace] 1
+[pattern_trace] 0
