@@ -208,6 +208,16 @@ module L_stage
 
   assign ready = ~(|counter);
 
+
+`ifndef SYNTHESIS
+  integer kk;
+  initial begin
+    $dumpfile("L_stage.vcd");
+    for (kk=15;kk>=0;kk=kk-1)
+      $dumpvars(0,b[kk],gf256_do[kk]);
+  end
+`endif
+
 //////// Linear vector from sect 5.1.2
 //uint8_t L_vec [0:15] = { 0x94, 0x20, 0x85, 0x10, 0xC2, 0xC0, 0x01, 0xFB, 0x01, 0xC0, 0xC2, 0x10, 0x85, 0x20, 0x94, 0x01};
 function [7:0] L_vec( input [3:0] x );
